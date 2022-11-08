@@ -42,15 +42,15 @@ public class PlayerController : MonoBehaviour
             winPanel.SetActive(true);
             Time.timeScale = 0;
         }
-        if (kgValue >= 100)
-        {
-            anim.SetTrigger("Fat");
-            Debug.Log("Fat");
-        }
-        if (kgValue < 100)
-        {
-            anim.SetTrigger("Thin");
-        }
+        //if (kgValue >= 100)
+        //{
+        //    anim.SetTrigger("Fat");
+        //    Debug.Log("Fat");
+        //}
+        //if (kgValue < 100)
+        //{
+        //    anim.SetTrigger("Thin");
+        //}
 
         slider.value = kgValue;
         if (SwipeController.swipeRight || Input.GetKeyDown(KeyCode.D))

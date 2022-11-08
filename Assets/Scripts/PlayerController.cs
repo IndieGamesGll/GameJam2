@@ -6,64 +6,70 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
-    private Animator anim;
+    
     private Vector3 direction;
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float gravity;
-    [SerializeField] private int coins;
     [SerializeField] private GameObject losePanel;
-    [SerializeField] private Text coinsText;
+    [SerializeField] private GameObject winPanel;
+    [SerializeField] private Animator anim;
 
-    private bool isRolling;
+    [SerializeField] private Text value;
+    [SerializeField] private Slider slider;
+    [SerializeField] private int kgValue;
+
 
     private int lineToMove = 1;
     public float LineDistance = 4;
-    private float maxSpeed = 110;
+    private float maxSpeed = 20;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
-        anim = GetComponent<Animator>();
         StartCoroutine(SpeedIncrease());
         Time.timeScale = 1;
     }
     private void Update()
     {
-        if (SwipeController.swipeRight)
+        if (kgValue == 120)
+        {
+            losePanel.SetActive(true);
+            Time.timeScale = 0;
+        }
+        if (kgValue == 60)
+        {
+            winPanel.SetActive(true);
+            Time.timeScale = 0;
+        }
+        if (kgValue >= 100)
+        {
+            anim.SetTrigger("Fat");
+            Debug.Log("Fat");
+        }
+        if (kgValue < 100)
+        {
+            anim.SetTrigger("Thin");
+        }
+
+        slider.value = kgValue;
+        if (SwipeController.swipeRight || Input.GetKeyDown(KeyCode.D))
         {
             if (lineToMove < 2)
             {
                 lineToMove++;
             }
         }
-        if (SwipeController.swipeLeft)
+        if (SwipeController.swipeLeft || Input.GetKeyDown(KeyCode.A))
         {
             if (lineToMove > 0)
             {
                 lineToMove--;
             }
         }
-        if (SwipeController.swipeUp)
-        {
-            if (controller.isGrounded)
-            {
-                Jump();
-            }
+        
 
-        }
-        if (SwipeController.swipeDown)
-        {
-            StartCoroutine(Slide());
-        }
-
-        if(controller.isGrounded && !isRolling)
-        {
-            anim.SetBool("IsRunning", true);
-        }else
-        {
-            anim.SetBool("IsRunning", false);
-        }
+        
 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
         if (lineToMove == 0)
@@ -89,7 +95,7 @@ public class PlayerController : MonoBehaviour
         {
             controller.Move(diff);
         }
-
+        
 
     }
     private void FixedUpdate()
@@ -103,20 +109,21 @@ public class PlayerController : MonoBehaviour
         direction.y = jumpForce;
         anim.SetTrigger("Jump");
     }
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        if (hit.gameObject.tag == "obstacle")
-        {
-            losePanel.SetActive(true);
-            Time.timeScale = 0;
-        }
-    }
+   
+        
+    
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "coin")
+        if (other.gameObject.tag == "Good")
         {
-            coins++;
-            coinsText.text = coins.ToString();
+            kgValue--;
+            value.text = kgValue.ToString();
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.tag == "Bad")
+        {
+            kgValue++;
+            value.text = kgValue.ToString();
             Destroy(other.gameObject);
         }
     }
@@ -133,11 +140,9 @@ public class PlayerController : MonoBehaviour
     {
         controller.center = new Vector3(0, -0.5f, 0);
         controller.height = 1f;
-        isRolling = true;
         anim.SetTrigger("Roll");
         yield return new WaitForSeconds(1);
         controller.center = new Vector3(0, 0, 0);
         controller.height = 2;
-        isRolling = false;
     }
 }

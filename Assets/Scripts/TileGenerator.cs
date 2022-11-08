@@ -17,16 +17,16 @@ public class TileGenerator : MonoBehaviour
         {
             if (i == 0)
             {
-                SpawnTile(3);
+                SpawnTile(4);
             }
-            SpawnTile(Random.Range(0, TilePrefabs.Length - 1));
+            SpawnTile(Random.Range(0, TilePrefabs.Length-1));
         }
     }
     void Update()
     {
         if (player.position.z - 60 > spawnPos - (startTitles * tileLenght))
         {
-            SpawnTile(Random.Range(0, TilePrefabs.Length));
+            SpawnTile(Random.Range(0, TilePrefabs.Length-1));
             DeleteTile();
         }
     }

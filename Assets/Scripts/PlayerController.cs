@@ -53,14 +53,14 @@ public class PlayerController : MonoBehaviour
         //}
 
         slider.value = kgValue;
-        if (SwipeController.swipeRight || Input.GetKeyDown(KeyCode.D))
+        if (SwipeController.swipeRight || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (lineToMove < 2)
             {
                 lineToMove++;
             }
         }
-        if (SwipeController.swipeLeft || Input.GetKeyDown(KeyCode.A))
+        if (SwipeController.swipeLeft || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (lineToMove > 0)
             {

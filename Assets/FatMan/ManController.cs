@@ -30,7 +30,7 @@ public class ManController : MonoBehaviour
             skinnedMeshRenderer.SetBlendShapeWeight(1, -1f * _slider.value * 100f);
         }
 
-        if (Input.GetKeyDown(KeyCode.D)) {
+        if (Input.GetKeyDown(KeyCode.Q)) {
             _animator.SetTrigger("Dance");
         }
     }

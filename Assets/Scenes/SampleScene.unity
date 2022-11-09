@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1158,6 +1158,7 @@ GameObject:
   - component: {fileID: 1209069595}
   - component: {fileID: 1209069591}
   - component: {fileID: 1209069596}
+  - component: {fileID: 1209069597}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1221,6 +1222,21 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1209069597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209069589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa9e64dc6897c244a2ce8bac4d882e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skinnedMeshRenderer: {fileID: 1776841644}
+  _slider: {fileID: 1595150330}
+  _animator: {fileID: 1438573863}
 --- !u!1 &1306324885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,6 +1759,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!137 &1776841644 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1630794972795428178, guid: 176bfeeae855eef42926875892976fc3, type: 3}
+  m_PrefabInstance: {fileID: 933917509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1863905703
 GameObject:
   m_ObjectHideFlags: 0

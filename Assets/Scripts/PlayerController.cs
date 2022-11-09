@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Text value;
     [SerializeField] private Slider slider;
-    [SerializeField] private int kgValue;
+    [SerializeField] private float kgValue;
 
 
     private int lineToMove = 1;
@@ -32,12 +32,12 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        if (kgValue == 120)
+        if (kgValue >= 1)
         {
             losePanel.SetActive(true);
             Time.timeScale = 0;
         }
-        if (kgValue == 60)
+        if (kgValue <= -1)
         {
             winPanel.SetActive(true);
             Time.timeScale = 0;
@@ -116,13 +116,13 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Good")
         {
-            kgValue--;
-            value.text = kgValue.ToString();
+            kgValue-=0.03f;
+            value.text =kgValue.ToString();
             Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "Bad")
         {
-            kgValue++;
+            kgValue+=0.03f;
             value.text = kgValue.ToString();
             Destroy(other.gameObject);
         }

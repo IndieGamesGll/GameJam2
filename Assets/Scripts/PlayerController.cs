@@ -110,14 +110,14 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Good")
         {
-            _speed += 0.75f;
+            _speed += 0.5f;
             _kgValue -= 0.03f;
             _value.text = _kgValue.ToString();
             Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "Bad")
         {
-            _speed -= 0.5f;
+            _speed -= 0.25f;
             _kgValue += 0.03f;
             _value.text = _kgValue.ToString();
             Destroy(other.gameObject);

@@ -5,41 +5,41 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    private CharacterController controller;
-    
-    private Vector3 direction;
-    [SerializeField] private float speed;
-    [SerializeField] private float jumpForce;
-    [SerializeField] private float gravity;
-    [SerializeField] private GameObject losePanel;
-    [SerializeField] private GameObject winPanel;
-    [SerializeField] private Animator anim;
+    private CharacterController _controller;
 
-    [SerializeField] private Text value;
-    [SerializeField] private Slider slider;
-    [SerializeField] private float kgValue;
+    private Vector3 _direction;
+    [SerializeField] private float _speed;
+    //[SerializeField] private float _jumpForce;
+    [SerializeField] private float _gravity;
+    [SerializeField] private GameObject _losePanel;
+    [SerializeField] private GameObject _winPanel;
+   // [SerializeField] private Animator _anim;
+
+    [SerializeField] private Text _value;
+    [SerializeField] private Slider _slider;
+    [SerializeField] private float _kgValue;
 
 
-    private int lineToMove = 1;
+    private int _lineToMove = 1;
     public float LineDistance = 4;
-    private float maxSpeed = 20;
+    private float _maxSpeed = 20;
 
     private void Start()
     {
-        controller = GetComponent<CharacterController>();
-        StartCoroutine(SpeedIncrease());
+        _controller = GetComponent<CharacterController>();
+       // StartCoroutine(SpeedIncrease());
         Time.timeScale = 1;
     }
     private void Update()
     {
-        if (kgValue >= 1)
+        if (_kgValue >= 1)
         {
-            losePanel.SetActive(true);
+            _losePanel.SetActive(true);
             Time.timeScale = 0;
         }
-        if (kgValue <= -1)
+        if (_kgValue <= -1)
         {
-            winPanel.SetActive(true);
+            _winPanel.SetActive(true);
             Time.timeScale = 0;
         }
         //if (kgValue >= 100)
@@ -52,31 +52,29 @@ public class PlayerController : MonoBehaviour
         //    anim.SetTrigger("Thin");
         //}
 
-        slider.value = kgValue;
+        _slider.value = _kgValue;
+
         if (SwipeController.swipeRight || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (lineToMove < 2)
+            if (_lineToMove < 2)
             {
-                lineToMove++;
+                _lineToMove++;
             }
         }
         if (SwipeController.swipeLeft || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (lineToMove > 0)
+            if (_lineToMove > 0)
             {
-                lineToMove--;
+                _lineToMove--;
             }
         }
-        
-
-        
 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
-        if (lineToMove == 0)
+        if (_lineToMove == 0)
         {
             targetPosition += Vector3.left * LineDistance;
         }
-        else if (lineToMove == 2)
+        else if (_lineToMove == 2)
         {
             targetPosition += Vector3.right * LineDistance;
         }
@@ -89,60 +87,58 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDir = diff.normalized * 25 * Time.deltaTime;
         if (moveDir.sqrMagnitude < diff.sqrMagnitude)
         {
-            controller.Move(moveDir);
+            _controller.Move(moveDir);
         }
         else
         {
-            controller.Move(diff);
+            _controller.Move(diff);
         }
-        
-
     }
     private void FixedUpdate()
     {
-        direction.z = speed;
-        direction.y += gravity * Time.fixedDeltaTime;
-        controller.Move(direction * Time.fixedDeltaTime);
+        _direction.z = _speed;
+        _direction.y += _gravity * Time.fixedDeltaTime;
+        _controller.Move(_direction * Time.fixedDeltaTime);
     }
-    private void Jump()
-    {
-        direction.y = jumpForce;
-        anim.SetTrigger("Jump");
-    }
-   
-        
-    
+    //private void Jump()
+    //{
+    //    _direction.y = _jumpForce;
+    //    _anim.SetTrigger("Jump");
+    //}
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Good")
         {
-            kgValue-=0.03f;
-            value.text =kgValue.ToString();
+            _speed += 0.75f;
+            _kgValue -= 0.03f;
+            _value.text = _kgValue.ToString();
             Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "Bad")
         {
-            kgValue+=0.03f;
-            value.text = kgValue.ToString();
+            _speed -= 0.5f;
+            _kgValue += 0.03f;
+            _value.text = _kgValue.ToString();
             Destroy(other.gameObject);
         }
     }
-    private IEnumerator SpeedIncrease()
-    {
-        yield return new WaitForSeconds(4);
-        if (speed < maxSpeed)
-        {
-            speed += 3;
-            StartCoroutine(SpeedIncrease());
-        }
-    }
-    private IEnumerator Slide()
-    {
-        controller.center = new Vector3(0, -0.5f, 0);
-        controller.height = 1f;
-        anim.SetTrigger("Roll");
-        yield return new WaitForSeconds(1);
-        controller.center = new Vector3(0, 0, 0);
-        controller.height = 2;
-    }
+    //private IEnumerator SpeedIncrease()
+    //{
+    //    yield return new WaitForSeconds(4);
+    //    if (_speed < _maxSpeed)
+    //    {
+    //        _speed += 3;
+    //        StartCoroutine(SpeedIncrease());
+    //    }
+    //}
+    //private IEnumerator Slide()
+    //{
+    //    _controller.center = new Vector3(0, -0.5f, 0);
+    //    _controller.height = 1f;
+    //    _anim.SetTrigger("Roll");
+    //    yield return new WaitForSeconds(1);
+    //    _controller.center = new Vector3(0, 0, 0);
+    //    _controller.height = 2;
+    //}
 }

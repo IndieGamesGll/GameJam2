@@ -12,26 +12,32 @@ public class ManController : MonoBehaviour
     [SerializeField] Animator _animator;
     Mesh skinnedMesh;
 
-    void Awake() {
+    void Awake()
+    {
         skinnedMesh = skinnedMeshRenderer.GetComponent<SkinnedMeshRenderer>().sharedMesh;
     }
 
-    void Start() {
+    void Start()
+    {
         blendShapeCount = skinnedMesh.blendShapeCount;
         Debug.Log(blendShapeCount);
+
+
+        _animator.SetBool("Dance",true);
     }
 
-    void Update() {
-        if (_slider.value > 0f) {
+    void Update()
+    {
+        if (_slider.value > 0f)
+        {
             skinnedMeshRenderer.SetBlendShapeWeight(0, _slider.value * 100f);
             _animator.SetFloat("fatValue", _slider.value);
         }
-        else {
+        else
+        {
             skinnedMeshRenderer.SetBlendShapeWeight(1, -1f * _slider.value * 100f);
         }
 
-        if (Input.GetKeyDown(KeyCode.Q)) {
-            _animator.SetTrigger("Dance");
-        }
+
     }
 }

@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController _controller;
 
     private Vector3 _direction;
-    [SerializeField] private float _speed;
+    public float _speed;
     //[SerializeField] private float _jumpForce;
     [SerializeField] private float _gravity;
     [SerializeField] private GameObject _losePanel;
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     private int _lineToMove = 1;
     public float LineDistance = 4;
-    private float _maxSpeed = 20;
+    //private float _maxSpeed = 20;
 
     private void Start()
     {

@@ -5,72 +5,76 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    private CharacterController controller;
-    private Animator anim;
-    private Vector3 direction;
-    [SerializeField] private float speed;
-    [SerializeField] private float jumpForce;
-    [SerializeField] private float gravity;
-    [SerializeField] private int coins;
-    [SerializeField] private GameObject losePanel;
-    [SerializeField] private Text coinsText;
+    private CharacterController _controller;
 
-    private bool isRolling;
+    private Vector3 _direction;
+    [SerializeField] private float _speed;
+    //[SerializeField] private float _jumpForce;
+    [SerializeField] private float _gravity;
+    [SerializeField] private GameObject _losePanel;
+    [SerializeField] private GameObject _winPanel;
+   // [SerializeField] private Animator _anim;
 
-    private int lineToMove = 1;
+    [SerializeField] private Text _value;
+    [SerializeField] private Slider _slider;
+    [SerializeField] private float _kgValue;
+
+
+    private int _lineToMove = 1;
     public float LineDistance = 4;
-    private float maxSpeed = 110;
+    private float _maxSpeed = 20;
 
     private void Start()
     {
-        controller = GetComponent<CharacterController>();
-        anim = GetComponent<Animator>();
-        StartCoroutine(SpeedIncrease());
+        _controller = GetComponent<CharacterController>();
+       // StartCoroutine(SpeedIncrease());
         Time.timeScale = 1;
     }
     private void Update()
     {
-        if (SwipeController.swipeRight)
+        if (_kgValue >= 1)
         {
-            if (lineToMove < 2)
-            {
-                lineToMove++;
-            }
+            _losePanel.SetActive(true);
+            Time.timeScale = 0;
         }
-        if (SwipeController.swipeLeft)
+        if (_kgValue <= -1)
         {
-            if (lineToMove > 0)
-            {
-                lineToMove--;
-            }
+            _winPanel.SetActive(true);
+            Time.timeScale = 0;
         }
-        if (SwipeController.swipeUp)
-        {
-            if (controller.isGrounded)
-            {
-                Jump();
-            }
+        //if (kgValue >= 100)
+        //{
+        //    anim.SetTrigger("Fat");
+        //    Debug.Log("Fat");
+        //}
+        //if (kgValue < 100)
+        //{
+        //    anim.SetTrigger("Thin");
+        //}
 
-        }
-        if (SwipeController.swipeDown)
-        {
-            StartCoroutine(Slide());
-        }
+        _slider.value = _kgValue;
 
-        if(controller.isGrounded && !isRolling)
+        if (SwipeController.swipeRight || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            anim.SetBool("IsRunning", true);
-        }else
+            if (_lineToMove < 2)
+            {
+                _lineToMove++;
+            }
+        }
+        if (SwipeController.swipeLeft || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            anim.SetBool("IsRunning", false);
+            if (_lineToMove > 0)
+            {
+                _lineToMove--;
+            }
         }
 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
-        if (lineToMove == 0)
+        if (_lineToMove == 0)
         {
             targetPosition += Vector3.left * LineDistance;
         }
-        else if (lineToMove == 2)
+        else if (_lineToMove == 2)
         {
             targetPosition += Vector3.right * LineDistance;
         }
@@ -83,61 +87,58 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDir = diff.normalized * 25 * Time.deltaTime;
         if (moveDir.sqrMagnitude < diff.sqrMagnitude)
         {
-            controller.Move(moveDir);
+            _controller.Move(moveDir);
         }
         else
         {
-            controller.Move(diff);
+            _controller.Move(diff);
         }
-
-
     }
     private void FixedUpdate()
     {
-        direction.z = speed;
-        direction.y += gravity * Time.fixedDeltaTime;
-        controller.Move(direction * Time.fixedDeltaTime);
+        _direction.z = _speed;
+        _direction.y += _gravity * Time.fixedDeltaTime;
+        _controller.Move(_direction * Time.fixedDeltaTime);
     }
-    private void Jump()
-    {
-        direction.y = jumpForce;
-        anim.SetTrigger("Jump");
-    }
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        if (hit.gameObject.tag == "obstacle")
-        {
-            losePanel.SetActive(true);
-            Time.timeScale = 0;
-        }
-    }
+    //private void Jump()
+    //{
+    //    _direction.y = _jumpForce;
+    //    _anim.SetTrigger("Jump");
+    //}
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "coin")
+        if (other.gameObject.tag == "Good")
         {
-            coins++;
-            coinsText.text = coins.ToString();
+            _speed += 0.5f;
+            _kgValue -= 0.03f;
+            _value.text = _kgValue.ToString();
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.tag == "Bad")
+        {
+            _speed -= 0.25f;
+            _kgValue += 0.03f;
+            _value.text = _kgValue.ToString();
             Destroy(other.gameObject);
         }
     }
-    private IEnumerator SpeedIncrease()
-    {
-        yield return new WaitForSeconds(4);
-        if (speed < maxSpeed)
-        {
-            speed += 3;
-            StartCoroutine(SpeedIncrease());
-        }
-    }
-    private IEnumerator Slide()
-    {
-        controller.center = new Vector3(0, -0.5f, 0);
-        controller.height = 1f;
-        isRolling = true;
-        anim.SetTrigger("Roll");
-        yield return new WaitForSeconds(1);
-        controller.center = new Vector3(0, 0, 0);
-        controller.height = 2;
-        isRolling = false;
-    }
+    //private IEnumerator SpeedIncrease()
+    //{
+    //    yield return new WaitForSeconds(4);
+    //    if (_speed < _maxSpeed)
+    //    {
+    //        _speed += 3;
+    //        StartCoroutine(SpeedIncrease());
+    //    }
+    //}
+    //private IEnumerator Slide()
+    //{
+    //    _controller.center = new Vector3(0, -0.5f, 0);
+    //    _controller.height = 1f;
+    //    _anim.SetTrigger("Roll");
+    //    yield return new WaitForSeconds(1);
+    //    _controller.center = new Vector3(0, 0, 0);
+    //    _controller.height = 2;
+    //}
 }

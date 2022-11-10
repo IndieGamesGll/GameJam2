@@ -7,6 +7,7 @@ public class LoseGame : MonoBehaviour
 {
     public void Restart()
     {
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

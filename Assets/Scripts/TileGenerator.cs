@@ -7,7 +7,7 @@ public class TileGenerator : MonoBehaviour
     public GameObject[] TilePrefabs;
     private List<GameObject> activeTiles = new List<GameObject>();
     private float spawnPos = 0;
-    private float tileLenght = 100;
+    private float tileLenght = 105;
 
     [SerializeField] private Transform player;
     private int startTitles = 6;
@@ -17,16 +17,16 @@ public class TileGenerator : MonoBehaviour
         {
             if (i == 0)
             {
-                SpawnTile(3);
+                SpawnTile(4);
             }
-            SpawnTile(Random.Range(0, TilePrefabs.Length - 1));
+            SpawnTile(Random.Range(0, TilePrefabs.Length-1));
         }
     }
     void Update()
     {
-        if (player.position.z - 60 > spawnPos - (startTitles * tileLenght))
+        if (player.position.z - 72 > spawnPos - (startTitles * tileLenght))
         {
-            SpawnTile(Random.Range(0, TilePrefabs.Length));
+            SpawnTile(Random.Range(0, TilePrefabs.Length-1));
             DeleteTile();
         }
     }

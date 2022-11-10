@@ -9,8 +9,10 @@ public class RotateAndStart : MonoBehaviour
     [SerializeField] Transform _camera;
     [SerializeField] Animator _animator;
     [SerializeField] PlayerController _playerController;
+    [SerializeField] MonoBehaviour _monoBehaviour;
     public void RotateAndGo()
     {
+        _monoBehaviour.enabled = true;
         _camera.position = new Vector3(0, 6.19f, -10);
         _camera.rotation = Quaternion.Euler(16.194f,0f,0f);
         _player.Rotate(0, 180, 0);

@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &274962012361865868
 Transform:
@@ -48,7 +48,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3626008928268937901
 Transform:
@@ -83,7 +83,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3010468255280168585
 Transform:
@@ -129,7 +129,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2058370322276073668
 Transform:
@@ -177,7 +177,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &9049774160670452226
 Transform:
@@ -273,7 +273,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5707933657752270391
 Transform:
@@ -319,7 +319,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1447307665108045351
 Transform:
@@ -365,7 +365,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2965598910466095151
 Transform:
@@ -411,7 +411,7 @@ GameObject:
   m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6200003520305826494
 Transform:
@@ -456,7 +456,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8827168650585539815
 Transform:
@@ -491,7 +491,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3133405658296432821
 Transform:
@@ -537,7 +537,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3893886937153723793
 Transform:
@@ -582,7 +582,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &289280103271902976
 Transform:
@@ -617,7 +617,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8308845477539993762
 Transform:
@@ -662,7 +662,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6906157000250175877
 Transform:
@@ -705,7 +705,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8921253750565747390
 Transform:
@@ -750,7 +750,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &9050395573649505460
 Transform:
@@ -782,7 +782,7 @@ GameObject:
   m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &9035824937860590401
 Transform:
@@ -828,7 +828,7 @@ GameObject:
   m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4641658847716602487
 Transform:
@@ -874,7 +874,7 @@ GameObject:
   m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &335019697286635800
 Transform:
@@ -919,7 +919,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2325030734905193743
 Transform:
@@ -954,7 +954,7 @@ GameObject:
   m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6836492116306400325
 Transform:
@@ -1000,7 +1000,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2825990259864969756
 Transform:
@@ -1046,7 +1046,7 @@ GameObject:
   m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3177926307021346422
 Transform:
@@ -1092,7 +1092,7 @@ GameObject:
   m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3456589467697617608
 Transform:
@@ -1138,7 +1138,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1154006669958921167
 Transform:
@@ -1184,7 +1184,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &818722310728564598
 Transform:
@@ -1230,7 +1230,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &9217905217261758750
 Transform:
@@ -1275,7 +1275,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &750712843903902408
 Transform:
@@ -1310,7 +1310,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7158252865184405469
 Transform:
@@ -1355,7 +1355,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3362608934781382657
 Transform:
@@ -1390,7 +1390,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6651820305139732797
 Transform:
@@ -1435,7 +1435,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7549483846552483001
 Transform:
@@ -1470,7 +1470,7 @@ GameObject:
   m_TagString: Good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7978984302895846799
 Transform:
@@ -1516,7 +1516,7 @@ GameObject:
   m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8170583877799766369
 Transform:
@@ -1561,7 +1561,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6064296462204795839
 Transform:
@@ -1588,6 +1588,10 @@ PrefabInstance:
     - target: {fileID: 3738187415824874293, guid: 829ff58b373518c4daa7e467ad84ac29, type: 3}
       propertyPath: m_Name
       value: Swirl lollipop C
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738187415824874293, guid: 829ff58b373518c4daa7e467ad84ac29, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4083468583896867215, guid: 829ff58b373518c4daa7e467ad84ac29, type: 3}
       propertyPath: m_RootOrder
@@ -1707,6 +1711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bundt Cake cut
       objectReference: {fileID: 0}
+    - target: {fileID: 2081209941963662239, guid: 475c2b2992311884da42708c21b4e989, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 475c2b2992311884da42708c21b4e989, type: 3}
 --- !u!4 &1419077236343531968 stripped
@@ -1781,6 +1789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy Cane B
       objectReference: {fileID: 0}
+    - target: {fileID: 6666603328627169091, guid: 0329acc1efc28324e94f5bd5a062069e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0329acc1efc28324e94f5bd5a062069e, type: 3}
 --- !u!4 &5978856519376482533 stripped
@@ -1842,6 +1854,10 @@ PrefabInstance:
     - target: {fileID: 8835592703282879395, guid: 0b6e65f0fca42c647855eb8962efa3df, type: 3}
       propertyPath: m_Name
       value: Soda bottle Glass A
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835592703282879395, guid: 0b6e65f0fca42c647855eb8962efa3df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b6e65f0fca42c647855eb8962efa3df, type: 3}
@@ -1917,6 +1933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doughnut H
       objectReference: {fileID: 0}
+    - target: {fileID: 8780654592860833253, guid: cd5c0226d9d4b554885c988834915042, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd5c0226d9d4b554885c988834915042, type: 3}
 --- !u!4 &7288501399170145299 stripped
@@ -1934,6 +1954,10 @@ PrefabInstance:
     - target: {fileID: 1598737658758947845, guid: 9618ee5198d5bc14690b61b995f89590, type: 3}
       propertyPath: m_Name
       value: Coffee Cup C
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598737658758947845, guid: 9618ee5198d5bc14690b61b995f89590, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2117830654869487295, guid: 9618ee5198d5bc14690b61b995f89590, type: 3}
       propertyPath: m_RootOrder
@@ -2041,6 +2065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato
       objectReference: {fileID: 0}
+    - target: {fileID: 3452694226032689571, guid: 7d297ce6a487c0247b5edccce4ece3c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d297ce6a487c0247b5edccce4ece3c6, type: 3}
 --- !u!4 &4582208860743027267 stripped
@@ -2102,6 +2130,10 @@ PrefabInstance:
     - target: {fileID: 7995497868466590050, guid: c5240644e1df8364aa4cea385c7cf092, type: 3}
       propertyPath: m_Name
       value: Peach
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995497868466590050, guid: c5240644e1df8364aa4cea385c7cf092, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5240644e1df8364aa4cea385c7cf092, type: 3}
@@ -2165,6 +2197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soda can C
       objectReference: {fileID: 0}
+    - target: {fileID: 8998803247781539246, guid: 967bda6cd12c7c34d852681f280bdfef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 967bda6cd12c7c34d852681f280bdfef, type: 3}
 --- !u!4 &5149323810723254888 stripped
@@ -2226,6 +2262,10 @@ PrefabInstance:
     - target: {fileID: 2229596374276676037, guid: 5ebdbc030ec57844d95ccb60b8223fd7, type: 3}
       propertyPath: m_Name
       value: Hotdog A
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229596374276676037, guid: 5ebdbc030ec57844d95ccb60b8223fd7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ebdbc030ec57844d95ccb60b8223fd7, type: 3}
@@ -2289,6 +2329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Melon
       objectReference: {fileID: 0}
+    - target: {fileID: 9100271328223055971, guid: 2c49621a8650a60459ee1c1548bee1d4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c49621a8650a60459ee1c1548bee1d4, type: 3}
 --- !u!4 &5102646971740746299 stripped
@@ -2306,6 +2350,10 @@ PrefabInstance:
     - target: {fileID: 4850541254266803216, guid: 1d08eb9304ef2d247b4c953f91c9ca75, type: 3}
       propertyPath: m_Name
       value: Pizza Margarita cut
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850541254266803216, guid: 1d08eb9304ef2d247b4c953f91c9ca75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195822731287006890, guid: 1d08eb9304ef2d247b4c953f91c9ca75, type: 3}
       propertyPath: m_RootOrder
@@ -2413,6 +2461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hotdog A
       objectReference: {fileID: 0}
+    - target: {fileID: 2229596374276676037, guid: 5ebdbc030ec57844d95ccb60b8223fd7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ebdbc030ec57844d95ccb60b8223fd7, type: 3}
 --- !u!4 &6770153136945525400 stripped
@@ -2430,6 +2482,10 @@ PrefabInstance:
     - target: {fileID: 5073589500609218522, guid: 4cdd0f536b998c141987f5362d20d263, type: 3}
       propertyPath: m_Name
       value: Bundt Cake
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073589500609218522, guid: 4cdd0f536b998c141987f5362d20d263, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5558236241046445408, guid: 4cdd0f536b998c141987f5362d20d263, type: 3}
       propertyPath: m_RootOrder
@@ -2537,6 +2593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bell pepper green
       objectReference: {fileID: 0}
+    - target: {fileID: 6639245508002578564, guid: 68cb6e858d2953e4c8693b634a033386, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68cb6e858d2953e4c8693b634a033386, type: 3}
 --- !u!4 &479225782801051957 stripped
@@ -2554,6 +2614,10 @@ PrefabInstance:
     - target: {fileID: 2587002078531558799, guid: 3033aaa6052ed4b40b0f4d7b951b5095, type: 3}
       propertyPath: m_Name
       value: Salmon Cut
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587002078531558799, guid: 3033aaa6052ed4b40b0f4d7b951b5095, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2931051724324095797, guid: 3033aaa6052ed4b40b0f4d7b951b5095, type: 3}
       propertyPath: m_RootOrder
@@ -2673,6 +2737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bell pepper green
       objectReference: {fileID: 0}
+    - target: {fileID: 6639245508002578564, guid: 68cb6e858d2953e4c8693b634a033386, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68cb6e858d2953e4c8693b634a033386, type: 3}
 --- !u!4 &3923691802552710297 stripped
@@ -2735,6 +2803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candy Cane B
       objectReference: {fileID: 0}
+    - target: {fileID: 6666603328627169091, guid: 0329acc1efc28324e94f5bd5a062069e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0329acc1efc28324e94f5bd5a062069e, type: 3}
 --- !u!4 &3654397173049418461 stripped
@@ -2796,6 +2868,10 @@ PrefabInstance:
     - target: {fileID: 3452694226032689571, guid: 7d297ce6a487c0247b5edccce4ece3c6, type: 3}
       propertyPath: m_Name
       value: Tomato
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452694226032689571, guid: 7d297ce6a487c0247b5edccce4ece3c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d297ce6a487c0247b5edccce4ece3c6, type: 3}
@@ -2871,6 +2947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice cream stick C
       objectReference: {fileID: 0}
+    - target: {fileID: 5305713196491597984, guid: fbf6814fd0d204440ab42c5d21ce612d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbf6814fd0d204440ab42c5d21ce612d, type: 3}
 --- !u!4 &3059844249203190013 stripped
@@ -2933,6 +3013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato
       objectReference: {fileID: 0}
+    - target: {fileID: 3452694226032689571, guid: 7d297ce6a487c0247b5edccce4ece3c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d297ce6a487c0247b5edccce4ece3c6, type: 3}
 --- !u!4 &5248522829046216266 stripped
@@ -2950,6 +3034,10 @@ PrefabInstance:
     - target: {fileID: 4850541254266803216, guid: 1d08eb9304ef2d247b4c953f91c9ca75, type: 3}
       propertyPath: m_Name
       value: Pizza Margarita cut
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850541254266803216, guid: 1d08eb9304ef2d247b4c953f91c9ca75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5195822731287006890, guid: 1d08eb9304ef2d247b4c953f91c9ca75, type: 3}
       propertyPath: m_RootOrder
@@ -3012,6 +3100,10 @@ PrefabInstance:
     - target: {fileID: 1397227135969740047, guid: 7f8fe02ce2c90a447861132975571507, type: 3}
       propertyPath: m_Name
       value: Cheesecake B
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397227135969740047, guid: 7f8fe02ce2c90a447861132975571507, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1740678647908605877, guid: 7f8fe02ce2c90a447861132975571507, type: 3}
       propertyPath: m_RootOrder
@@ -3130,6 +3222,10 @@ PrefabInstance:
     - target: {fileID: 8998803247781539246, guid: 967bda6cd12c7c34d852681f280bdfef, type: 3}
       propertyPath: m_Name
       value: Soda can C
+      objectReference: {fileID: 0}
+    - target: {fileID: 8998803247781539246, guid: 967bda6cd12c7c34d852681f280bdfef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 967bda6cd12c7c34d852681f280bdfef, type: 3}

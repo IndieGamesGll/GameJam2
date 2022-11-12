@@ -5,7 +5,7 @@ public class PauseMenu : MonoBehaviour
     private bool _pauseGame;
     [SerializeField] private GameObject _pauseGameMenu;
     [SerializeField] MonoBehaviour[] _componentsToDisable;
-    //[SerializeField] private GameObject _endGame;
+    [SerializeField] private GameObject _pauseButton;
    
     private void Start()
     {
@@ -17,10 +17,12 @@ public class PauseMenu : MonoBehaviour
         {
             if (_pauseGame)
             {
+                _pauseButton.SetActive(true);
                 Resume();
             }
             else
             {
+                _pauseButton.SetActive(false);
                 Pause();
             }
         }
@@ -40,6 +42,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        
         _pauseGameMenu.SetActive(true);
         Time.timeScale = 0f;
         _pauseGame = true;
